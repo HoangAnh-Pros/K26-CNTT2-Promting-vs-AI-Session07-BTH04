@@ -1,0 +1,47 @@
+[Bài thực hành 4] Sử dụng Feynman Prompt để học kiến thức lập trình
+
+Vấn đề : Học OOP (Class, Object, Attribute, Method, Constructor) trong Java qua Feynman Prompt: hỏi từng câu một, không lộ đáp án khi sai, đưa ví dụ thực tế để tự giải thích lại và tổng kết cuối buổi.
+
+Giải quyết bài toán :
+
+Phần 1 : Prompt & Quy trình học.
+Gồm 4 bước :
+Bước 1 : Mở chat mới, dán Prompt gia sư OOP Java.
+Bước 2 : Trả lời lần lượt: Class -> Object -> Attribute -> Method -> Constructor.
+Bước 3 : Khi sai, nhận ví dụ thực tế và tự giải thích lại thật đơn giản.
+Bước 4 : Nhận tổng kết cuối buổi.
+
+Prompt : Gia sư OOP Java theo phương pháp Feynman. Kiểm tra 5 khái niệm: Class, Object, Attribute, Method, Constructor. Không giải thích trước; chỉ hỏi từng câu một; đánh giá và chỉ điểm sai sau mỗi câu; không đưa đáp án ngay khi sai mà đưa ví dụ thực tế gần gũi và bắt giải thích lại thật đơn giản. Hỏi tối thiểu 5 câu, cuối buổi tổng kết đã hiểu/chưa hiểu. Bắt đầu Câu 1: Class.
+--> trả lời từng câu
+--> giải thích lại qua ví dụ
+--> lưu tổng kết.
+
+Phần 2 : Đầu ra hoàn chỉnh.
+Gồm 4 bước :
+Bước 1 : Ghi lại hội thoại tối thiểu 5 câu hỏi – trả lời.
+Bước 2 : Lập bảng đánh giá mức độ hiểu 5 khái niệm.
+Bước 3 : Nêu ví dụ thực tế mối quan hệ Class và Object.
+Bước 4 : Tự viết lại giải thích OOP sau buổi học.
+
+Hội thoại (5 câu):
+- C1 (Class): AI: Class là gì? | SV: Bản thiết kế chung quy định thuộc tính, phương thức. | AI: Đúng ý khuôn mẫu, chưa chứa dữ liệu thật.
+- C2 (Object): AI: Object là gì? | SV: Thể hiện từ new. | AI: Hơi lý thuyết. Ví Class là bản vẽ xe, Object là xe thật, giải thích lại. | SV: Bản vẽ chỉ trên giấy; xe thật ngoài đường là Object có biển số, xăng riêng. | AI: Chuẩn bản chất!
+- C3 (Attribute): AI: Attribute để làm gì? | SV: Lưu trạng thái riêng của từng object (mauXe). | AI: Đúng (nhớ phân biệt với static).
+- C4 (Method): AI: Method có vai trò gì? | SV: Hành vi giúp object xử lý/đổi Attribute của nó. | AI: Chuẩn!
+- C5 (Constructor): AI: Constructor làm gì, không viết thì sao? | SV: Khởi tạo giá trị khi new, trùng tên class, không kiểu trả về; không viết thì Java tự tạo bản mặc định không tham số. | AI: Đúng (có bản có tham số thì mất bản mặc định).
+- Tổng kết: Hiểu tốt qua ví dụ; cần nhớ kỹ static và constructor mặc định.
+
+Bảng đánh giá:
+| Khái niệm | Mức độ | Nhận xét |
+| :--- | :--- | :--- |
+| Class | Khá (8/10) | Hiểu bản thiết kế; chưa rõ tính không mang dữ liệu thật. |
+| Object | Tốt (9/10) | Giải thích tốt qua ví dụ thực tế. |
+| Attribute | Tốt (8/10) | Nắm trạng thái riêng; lưu ý static. |
+| Method | Tốt (8.5/10) | Hiểu hành vi gắn với dữ liệu. |
+| Constructor | Khá (8/10) | Nắm khởi tạo và bản mặc định. |
+
+Ví dụ Class – Object:
+Class SinhVien (mẫu thẻ gồm maSV, diemDanh()) -> Object sv1 (B26DTCN068), sv2 (B26DTCN099) tạo bằng new SinhVien(...), dùng chung mẫu nhưng dữ liệu riêng.
+
+Giải thích lại OOP:
+Class là bản thiết kế; Object là vật thể thật tạo từ bản thiết kế; Attribute là thông tin riêng của vật thể; Method là hành động của vật thể; Constructor là bước cài thông số ban đầu lúc tạo vật thể.
